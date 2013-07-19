@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <title>Pure CSS demo</title>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.1.0/pure-min.css">
+      <style scoped>
+         * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+         }
+         body > * {
+            padding: 0 1em;
+         }
+         #main-menu {
+            text-align: center;
+            background-color: #ddcbaf;
+         }
+         .pure-form label {
+            color: #000000;
+         }
+         .pure-table thead {
+            white-space: normal; 
+         }
+         .pure-form.pure-form-stacked textarea {
+            display: block;
+         }
+      </style>
+   </head>
+   <body>
+      <nav id="main-menu" class="pure-menu pure-menu-open pure-menu-horizontal">
+         <ul>
+            <li class="pure-menu-selected"><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+         </ul>
+      </nav>
+      <article id="about-me" class="pure-g-r">
+         <h1>Aurelio De Rosa</h1>
+         <div class="pure-u-1-4">
+            <img src="http://aurelio.audero.it/images/aurelio-de-rosa-2.jpg" alt="Aurelio De Rosa" />
+         </div>
+         <section class="pure-u-3-4">
+            <p>
+               I'm an Italian web and app developer who have a bachelor degree in Computer Science and more
+               than 5 years' experience programming for the web using HTML5, CSS3, JavaScript and PHP.
+               I mainly use the <abbr title="Linux Apache MySql PHP">LAMP</abbr> stack and frameworks like
+               <a href="http://jquery.com/" target="_blank">jQuery</a>, <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> and
+               <a href="http://phonegap.com/" target="_blank">Cordova (PhoneGap)</a>. My interests also include web security,
+               web accessibility, SEO and <a href="http://wordpress.org/" target="_blank">WordPress</a>.
+            </p>
+            <p>
+               Currently I'm self-employed working with the cited technologies. I'm also a regular blogger for
+               several networks (<a href="http://www.sitepoint.com/author/aderosa/" target="_blank">SitePoint</a>,
+               <a href="http://mobile.tutsplus.com/author/aurelio-de-rosa/">Tuts+</a> and
+               <a href="http://flippinawesome.org/authors/aurelio-de-rosa/" target="_blank">FlippinAwesome</a>)
+               where I write articles about the topics I usually work with and more.
+            </p>
+         </section>
+      </article>
+      <article class="pure-g-r">
+         <div class="pure-u-1-3">
+            <h3>Funny Price Table</h3>
+            <table class="pure-table">
+               <thead>
+                  <tr>
+                     <th>Hours Number</th>
+                     <th>Price (&euro;)</th>
+                     <th>Safe (%)</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr class="pure-table-odd">
+                     <td>1</td>
+                     <td>30 &euro;</td>
+                     <td>0%</td>
+                  </tr>
+                  <tr>
+                     <td>5</td>
+                     <td>135 &euro;</td>
+                     <td>10%</td>
+                  </tr>
+                  <tr class="pure-table-odd">
+                     <td>10</td>
+                     <td>255 &euro;</td>
+                     <td>15%</td>
+                  </tr>
+                  <tr>
+                     <td>20</td>
+                     <td>480 &euro;</td>
+                     <td>20%</td>
+                  </tr>
+                  <tr class="pure-table-odd">
+                     <td>50</td>
+                     <td>1050 &euro;</td>
+                     <td>30%</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="pure-u-1-3">
+            <h3>Contact me</h3>
+            <form id="contact" name="contact" action="#" method="post" class="pure-form pure-form-aligned">
+               <fieldset>
+                  <div class="pure-control-group">
+                     <label>Name:</label>
+                     <input type="text" name="name" placeholder="Name" />
+                  </div>
+                  <div class="pure-control-group">
+                     <label>Email</label>
+                     <input type="email" name="email" placeholder="Email" />
+                  </div>
+                  <div class="pure-control-group">
+                     <label>Subject</label>
+                     <input type="text" name="subject" placeholder="Subject" />
+                  </div>
+                  <div class="pure-control-group">
+                     <label>Message:</label>
+                     <textarea name="message" placeholder="Your message here..."></textarea>
+                  </div>
+                  <div class="pure-controls">
+                     <input type="submit" class="pure-button-primary" value="Submit" />
+                     <input type="reset" value="Reset" />
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+         <aside class="pure-u-1-3">
+            <h2>Where to find me</h2>
+            <div class="pure-menu pure-menu-open">
+               <a href="#" class="pure-menu-heading">My profiles</a>
+               <ul>
+                  <li><a href="http://www.twitter.com/AurelioDeRosa">Twitter</a></li>
+                  <li><a href="http://www.linkedin.com/in/aurelioderosa">LinkedIn</a></li>
+                  <li><a href="https://github.com/AurelioDeRosa">GitHub</a></li>
+                  <li><a href="https://plus.google.com/111199469497044249730">Google+</a></li>
+               </ul>
+            </div>
+         </aside>
+      </article>
+   </body>
+</html>
